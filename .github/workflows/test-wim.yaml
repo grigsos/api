@@ -1,0 +1,21 @@
+name: python
+
+on: push
+
+jobs:
+  action-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: run action
+      uses: WRRB/wim-action@v1
+      with:
+        names: "Wim"
+
+
+
+
+
